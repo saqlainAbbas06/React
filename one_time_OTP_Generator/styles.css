@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 48px 56px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  width: 320px;
+}
+
+#otp-title {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #f5f3ff;
+}
+
+#otp-display {
+  margin: 20px 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #ffd166;
+  min-height: 48px;
+  word-break: break-word;
+}
+
+#otp-timer {
+  min-height: 20px;
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  color: #ffb4b4;
+  font-weight: 500;
+}
+
+#generate-otp-button {
+  border: none;
+  outline: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6a88, #ff9966);
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  box-shadow: 0 4px 14px rgba(255, 106, 136, 0.4);
+}
+
+#generate-otp-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 106, 136, 0.55);
+}
+
+#generate-otp-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+#generate-otp-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: linear-gradient(135deg, #9aa0a6, #6b6f76);
+  box-shadow: none;
+}
