@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.rsvp-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.rsvp-card h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #22314f;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34405a;
+  margin-bottom: 6px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #cbd2e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #5b7fff;
+}
+
+.checkbox-field {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-field label {
+  margin: 0 0 0 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #5b7fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  background: #4a6ce0;
+}
+
+.confirmation {
+  margin-top: 24px;
+  padding: 16px;
+  background: #eef4ff;
+  border: 1px solid #c6d7ff;
+  border-radius: 8px;
+}
+
+.confirmation h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #22314f;
+}
+
+.confirmation p {
+  margin: 4px 0;
+  font-size: 0.92rem;
+  color: #34405a;
+}
